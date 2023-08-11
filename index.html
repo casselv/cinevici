@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+</head>
+<body>
+<nav>
+<ul class="navlist">
+    <a class="about" href=".landing" >about</a>
+    <a class="product" href="#products">products</a>
+    <a class="service" href="#services">services</a>
+    <a class="orders" href=".order" >order</a>
+</ul>
+</nav>
+<main>
+<div class="landing">
+    <h1 id="typing"></h1>
+    <img class="web" src="./dopeweb.png" alt="">
+    <p>Cinevici is a design and development company based in Melbourne
+        currently offering design and development services aswell as various software
+        products</p>
+</div>
+<div id="services">
+<div class="service-cont">
+    <div class="stitle">Services</div>
+    <div class="pancont">
+       <div class="ux">
+        <div class="kent">
+        <h2>UX / UI DESIGN</h2>
+        <p>Depending on your request 
+            we can design and develop websites
+            through variance means including 
+            straight code or a cms, webflow etc
+            we r mostly want to make simple and intuitive sites </p>
+            </div>
+       </div>
+
+
+       <div class="dev">
+        <div class="kent">
+        <h2>WEBSITE DEVELOPMENT</h2>
+        <p>Depending on your request 
+            we can design and develop websites
+            through variance means including 
+            straight code or a cms, webflow etc
+            we r mostly want to make simple and intuitive sites </p>        </div>
+        </div>
+
+
+      
+
+
+       <div class="vis">
+        <div class="kent">
+        <h2>VISUAL DESIGN</h2>
+        <p>Depending on your request 
+            we can design and develop websites
+            through variance means including 
+            straight code or a cms, webflow etc
+            we r mostly want to make simple and intuitive sites </p>
+        </div>
+       </div>
+
+
+       <div class="hard">
+        <div class="kent">
+        <h2>PACKAGING, SIGNAGE ETC</h2>
+        <p>Depending on your request 
+            we can design and develop websites
+            through variance means including 
+            straight code or a cms, webflow etc
+            we r mostly want to make simple and intuitive sites </p>
+       </div>
+    </div>
+
+
+</div>
+</div>
+</div>
+<div id="products">
+    <div class="product-cont">
+        <div class="ptitle">Products</div>
+        
+        <a class="singleproduct" href="https://geosurf.com.au/" target="_blank">
+            <div class="split">
+            <h2>GEOSURF        <span class="arrow">&rarr;</span></h2>
+            <p>GeoSurf is a versatile resource, empowering both local surfers and traveler's to explore and navigate Australia's diverse coastlines. By utilising satellite imagery and advanced filters, GeoSurf facilitates the discovery of ideal surf spots, perfectly aligning with your preferences and prevailing conditions – from wind and wave direction to tide and seafloor details, and more. As an evolving platform, GeoSurf aims to continuously introduce new features, including user-generated content, expanded filtration options, and coverage of more regions across Australia.</p>
+            </div>
+            <img class="logo" src="./GeoSurf.png" alt="logokent">
+
+        </a>
+
+    </div>
+</div>
+<div class="order">
+    <div class="otitle">Order</div>
+    <div class="form-container">
+        <form id="order-form" action="/submit-form" method="POST">
+            <div class="budget-cont">
+            <label for="budget">$<span id="budget-value">0</span></label>
+            <input type="range" id="budget" name="budget" min="0" max="1000" step="1" value="0">
+        </div>
+
+
+            <label><input type="checkbox" name="option" value="ux-design">UX Design</label>
+            <label><input type="checkbox" name="option" value="web-design">Web Design</label>
+            <label><input type="checkbox" name="option" value="visual-design">Visual Design</label>
+            <label><input type="checkbox" name="option" value="signage">Signage</label>
+
+            <textarea type="text" name="textbox" rows="4" id="textbox" placeholder="write a note..."></textarea>
+
+            <input id="submit" type="submit" value="Submit">
+
+
+        </form>
+    </div>
+</div>
+</main>
+
+    
+
+
+
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>
