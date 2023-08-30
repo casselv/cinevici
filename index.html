@@ -20,14 +20,17 @@
 <main>
 <div class="landing">
     <h1 id="typing"></h1>
-    <img class="web" src="./dopeweb.png" alt="">
+    <video  autoplay muted loop src="theweb.mp4" type="video/mp4"></video>
     <p>Cinevici is a design and development company based in Melbourne
         currently offering design and development services aswell as various software
         products</p>
 </div>
 <div id="services">
 <div class="service-cont">
-    <div class="stitle">Services</div>
+    <div class="stitle">
+    <h2>Services <span class="num">(4)</span></h2>
+    <div class="circle"></div>
+    </div>
     <div class="pancont">
        <div class="ux">
         <div class="kent">
@@ -84,11 +87,14 @@
 </div>
 <div id="products">
     <div class="product-cont">
-        <div class="ptitle">Products</div>
+        <div class="ptitle">
+        <h2>Products <span class="num">(1)</span></h2>
+        <div class="circle"></div>
+        </div>
         
         <a class="singleproduct" href="https://geosurf.com.au/" target="_blank">
             <div class="split">
-            <h2>GEOSURF        <span class="arrow">&rarr;</span></h2>
+            <h2>GEOSURF <span id="linkout">(geosurf.com.au)</span> </h2>
             <p>GeoSurf is a versatile resource, empowering both local surfers and traveler's to explore and navigate Australia's diverse coastlines. By utilising satellite imagery and advanced filters, GeoSurf facilitates the discovery of ideal surf spots, perfectly aligning with your preferences and prevailing conditions – from wind and wave direction to tide and seafloor details, and more. As an evolving platform, GeoSurf aims to continuously introduce new features, including user-generated content, expanded filtration options, and coverage of more regions across Australia.</p>
             </div>
             <img class="logo" src="./GeoSurf.png" alt="logokent">
@@ -98,26 +104,60 @@
     </div>
 </div>
 <div class="order">
-    <div class="otitle">Order</div>
-    <div class="form-container">
+    <div class="order-container">
+    <div class="otitle">
+        <h2>Order</h2>
+        <div class="circle"></div>
+    </div>
         <form id="order-form" action="/submit-form" method="POST">
+        <div class="lefter">
             <div class="budget-cont">
-            <label for="budget">$<span id="budget-value">0</span></label>
-            <input type="range" id="budget" name="budget" min="0" max="1000" step="1" value="0">
-        </div>
+            <label for="budget"><span id="insane">Budget:</span> $<span id="budget-value">0</span></label>
+            <input type="range" id="budget" name="budget" min="0" max="5000" step="1" value="0">
+            </div>
 
+             <div class="check">
+            <div class="uxcheck">
+            <input class="checkbox-input" type="checkbox" name="option" value="ux-design">
+            <span class="checkmark"></span>
+            <label class="dope" for="option">Ux / Ui Design</label>
+            </div>
 
-            <label><input type="checkbox" name="option" value="ux-design">UX Design</label>
-            <label><input type="checkbox" name="option" value="web-design">Web Design</label>
-            <label><input type="checkbox" name="option" value="visual-design">Visual Design</label>
-            <label><input type="checkbox" name="option" value="signage">Signage</label>
+            <div class="webcheck">
+            <input class="checkbox-input" type="checkbox" name="option" value="web-design">
+            <span class="checkmark"></span>
+            <label class="dope" for="option">Web Developement / Software</label>
+            </div>
+            <div class="visualcheck">
+            <input class="checkbox-input" type="checkbox" name="option" value="visual-design">
+            <span class="checkmark"></span>
+            <label class="dope" for="option">Visual / Graphic Design</label>
+            </div>
+            <div class="signcheck">
+            <input class="checkbox-input" type="checkbox" name="option" value="signage">
+            <span class="checkmark"></span>
+            <label class="dope" for="option">Signage / Wraps</label>
+            </div>
+            </div>
+    </div>
+    <div class="righter">
+
+            
 
             <textarea type="text" name="textbox" rows="4" id="textbox" placeholder="write a note..."></textarea>
+            
+            <div class="submiters">
+            <input placeholder="email" id="email" type="email" name="email" required>
 
             <input id="submit" type="submit" value="Submit">
+            </div>
+    </div>
+
+    </form>
 
 
-        </form>
+      
+   
     </div>
 </div>
 </main>

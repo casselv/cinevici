@@ -34,3 +34,20 @@ const budgetValue = document.getElementById("budget-value");
 budgetSlider.addEventListener("input", () => {
   budgetValue.textContent = budgetSlider.value;
 });
+
+document
+  .getElementById("order-form")
+  .addEventListener("submit", function (event) {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    let checkedCount = 0;
+
+    checkboxes.forEach(function (checkbox) {
+      if (checkbox.checked) {
+        checkedCount++;
+      }
+    });
+    if (checkedCount === 0) {
+      event.preventDefault();
+      alert("please select at least one service");
+    }
+  });

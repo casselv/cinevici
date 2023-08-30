@@ -1,18 +1,18 @@
 body{
 margin: 0px;
 padding: 0px;
-background-color: #0C0C0C ;
+background-color: #0C0C0C;
 }
 
 nav {
 width: 100%;
-background-color: #1C1C1C;
+background-color: black;
 height: 5vh;
 display: flex;
 justify-content: space-between;
 align-items: center;
 position: fixed;
-z-index: 5;
+z-index: 30;
 
 }
 
@@ -49,45 +49,53 @@ font-family: 'Courier New', Courier, monospace;
 width: 30%;
 bottom: 15%;
 left: 5%;
+overflow: hidden;
+z-index: 4;
 }
 
 .landing h1{
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 font-size: 250px;
 color: white;
+z-index: 5;
 }
 
 .web{
 height: 90%;
 position: absolute;
 left: 0px;
+overflow: hidden;
 }
 
 #services{
     height: 95vh;
-    background-color: #0C0C0C;
-    width: 100vw;
+    width: 100%;
     padding-top: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
     }
 
-.servie-cont{
+.service-cont{
 display: flex;
-width: 100%;
-height: 100%;
-justify-content: center;
+max-width: 100%;
+min-height: 60%;
+padding: 20px;
+justify-content: space-between;
 align-items: center;
 flex-direction: column;
 }
 
 .pancont{
-display: flex;
-gap: 20px;
-flex-wrap: wrap;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+max-height: 100%;
+height: 480px;
+max-width: 100%;
+display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .pancont h2{
@@ -106,16 +114,17 @@ padding: 20px;
 width: 20%;
 border-radius: 15px;
 margin-bottom: 70px;
+align-self: flex-start;
 }
 
 .ux, .dev, .vis, .hard{
 background-color: black;
+padding: 10px;
 display: flex;
 flex-grow: 1;
-width: 400px;
-height: 400px;
+max-width: 100%;
+height: 100%;
 flex-direction: column;
-padding: 20px;
 justify-content: space-between;
 border-radius: 2px;
 cursor: pointer;
@@ -140,24 +149,50 @@ align-items: center;
 }
 
 .product-cont{
-height: 100%;
+min-height: 60%;
 width: 100%;
 background-color: rgba(255, 0, 0, 0);
-margin: 40px;
+margin: 20px;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: start;
 }
 
-.ptitle, .otitle{
-    color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border: solid 1px rgb(197, 197, 197);
-    padding: 20px;
-    width: 20%;
-    border-radius: 15px;
-    margin-bottom: 70px;
+.otitle{
+align-self: flex-start;
+}
+
+.ptitle, .stitle, .otitle{
+color: white;
+font-family: Helvetica, sans-serif;
+display: flex;
+justify-content: space-between;
+border: solid 1px rgba(255, 255, 255, 0.319);
+width: 30%;
+padding: 0px 20px 0px 20px;
+border-radius: 5px;
+align-items: center;
+margin-bottom: 80px;
+}
+
+.ptitle h2, .stitle h2, .otitle h2{
+font-weight: lighter;
+font-size: 60px;
+margin-top: 6px;
+margin-bottom: 6px;
+}
+
+.num{
+font-size: 20px;
+color: grey;
+}
+
+.circle{
+border: 1px solid white;
+height: 30px;
+width: 30px;
+border-radius: 50%;
 }
 
 
@@ -170,13 +205,18 @@ justify-content: space-between;
 align-items: center;
 flex-direction: column;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-padding: 20px;
+padding: 40px;
 border-radius: 2px;
 cursor: pointer;
 border: rgb(0, 0, 0) solid 1px;
 text-decoration: none;
 list-style: none;
 transition: 0.2s ease;
+}
+
+.split{
+width: 100%;
+height: 100%;
 }
 
 .singleproduct h2{
@@ -188,7 +228,9 @@ color: rgba(255, 255, 255, 0.513);
 }
 
 .logo{
-margin-bottom: 100px;
+height: 50%;
+width: 50%;
+align-self: flex-start;
 }
 
 
@@ -214,13 +256,22 @@ color: rgba(0, 0, 0, 0.815);
 .order{
 height: 95vh;
 margin-top: 5vh;
-background-color:  #0C0C0C ;
 border-radius: 2px;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
 align-items: center;
+max-width: 100vw;
+}
+
+.order-container{
+width: 95%;
+height: 80%;
+flex-direction: column;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .ux:hover, .singleproduct:hover {
@@ -232,33 +283,51 @@ color: rgba(255, 255, 255, 0.598);
 font-weight: 300;
 }
 
-.form-container{
-height: 70%;
-width: 95%;
+
+.righter{
+width: 100%;
+height: 100% ;
 display: flex;
 flex-direction: column;
 }
 
-#order-form{
+.lefter{
+    width: 100%;
+    height: 100% ;
     display: flex;
     flex-direction: column;
+    }
+
+
+
+#order-form{
+    display: flex;
     justify-content: space-between;
-    flex-grow: 1;
     height: 100%;
     position: relative;
+    width: 100%;
+}
+
+.check{
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding-bottom: 30px;
+padding-top: 30px;
 }
 
 #budget{
-width: 50%;
+width: 90%;
 margin-top: 30px;
+cursor: pointer;
 }
 
 #textbox{
-height: 300px;
-width: 600px;
-position: absolute;
-right: 100px;
-top: 40px;
+height: 90%;
+padding: 10px;
+margin-top: 50px;
+max-width: 100%;
 border: solid 1.1px white;
 border-radius: 5px;
 color: white;
@@ -267,13 +336,9 @@ background-color: rgba(255, 255, 255, 0);
 }
 
 #textbox::placeholder{
-    color: rgb(208, 208, 208);
+    color: rgb(112, 112, 112);
 }
 
-.otitle{
-align-self: flex-start;
-margin-left: 3vw;
-}
 
 #option{
 font-family: arial;
@@ -288,14 +353,19 @@ color: white;
 #submit{
 width: 30%;
 align-self: flex-end;
-margin-right: 100px;
-text-align: start;
+text-align: center;
+margin-top: 50px;
 padding: 20px;
 background-color: white;
+cursor: pointer;
 border: none;
-color: rgb(143, 143, 143);
-border-radius: 10px;
+color: rgb(34, 34, 34);
+border-radius: 5px;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#submit:hover{
+background-color: rgb(228, 228, 228);
 }
 
 .budget-cont{
@@ -303,13 +373,19 @@ display: flex;
 flex-direction: column;
 font-family: arial;
 color: white;
+height: 40%;
+padding-bottom: 30px;
 }
 
 input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
-    background-color: #3e3e3e;
-    height: 6px;
+    background-color: #0C0C0C;
+    border-radius: 5px;
+    border: solid 0.5px rgb(169, 169, 169);
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   
 
@@ -318,7 +394,103 @@ input[type="range"] {
     appearance: none;
     background-color: #ffffff; 
     width: 20px;
+    
     height: 20px; 
-    margin-top: -7px; 
+    border-radius: 50%;
+    margin-top: -1px; 
   }
+
+label{
+color: white;
+font-family: arial;
+}
+
+#linkout{
+color: rgb(219, 219, 219);
+font-weight: lighter;
+font-size: 15px;
+text-align: center;
+}
+
+.webcheck, .uxcheck, .signcheck, .visualcheck{
+display: flex;
+padding: 10px;
+width: fit-content;
+gap: 60px;
+border-radius: 5px;
+position: relative;
+}
+
+#insane{
+color: rgba(255, 255, 255, 0.731);
+font-weight:100;
+}
+
+#email{
+margin-top: 30px;
+border: none;
+border: solid 1px white;
+background-color: #0C0C0C;
+font-family: Arial, Helvetica, sans-serif;
+padding: 20px;
+border-radius: 5px;
+color: white;
+width: 30%;
+}
+
+.checkbox-input {
+  opacity: 0;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 5px;
+  left: 1px;
+}
+
+.checkmark {
+  position: absolute;
+  top: -2px;
+  left: -4px;
+  height: 40px;
+  width: 40px;
+  background-color: #eeeeee00;
+  border: solid 1px rgba(255, 255, 255, 0.747);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.checkbox-input:checked ~ .checkmark {
+  background-color: white /* Change color when checked */
+}
+
+.dope{
+margin-left: 100px;
+}
+
+.submiters{
+display: flex;
+align-items: flex-end;
+justify-content: space-between;
+}
+video{
+position: absolute;
+z-index: 1;
+opacity: 50%;
+pointer-events: none;
+object-fit: cover;
+min-width: 100vw;
+min-height: 100% ;
+max-width: 100%;
+max-height: 100% ;
+filter: blur(10px);
+}
+
+
+
+
+
+
+
+
 
