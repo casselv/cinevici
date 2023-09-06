@@ -673,7 +673,7 @@ background-color: white;
   color: rgba(255, 255, 255, 0.617);
   font-family: 'Courier New', Courier, monospace;
   width: 70%;
-  bottom: 10%;
+  bottom: 8%;
   left: 5%;
   overflow: hidden;
   z-index: 4;
@@ -713,7 +713,7 @@ background-color: white;
           display: flex;
           justify-content: space-between;
           border: solid 1px rgba(255, 255, 255, 0.319);
-          width: 30%;
+          width: 50%;
           padding: 10px 20px 10px 20px;
           border-radius: 5px;
           align-items: center;
@@ -768,7 +768,7 @@ background-color: white;
                 border: solid 0.5px rgb(192, 192, 192)!important;
               padding: 10px;
               border-radius: 5px;
-              font-size: 13px;
+              font-size: 7px;
               }
 
               nav {
