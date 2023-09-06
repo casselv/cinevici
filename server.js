@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 
 app.use(express.static(__dirname));
 
-app.post("/submit-form", (req, res) => {
+/*app.post("/submit-form", (req, res) => {
   const { textbox, option, budget, email } = req.body;
 
   const transporter = nodemailer.createTransport({
@@ -48,7 +48,7 @@ app.post("/submit-form", (req, res) => {
       res.render("sent", { message: "message sent succesfully" });
     }
   });
-});
+});*/
 
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
