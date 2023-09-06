@@ -673,7 +673,7 @@ background-color: white;
   color: rgba(255, 255, 255, 0.617);
   font-family: 'Courier New', Courier, monospace;
   width: 70%;
-  bottom: 15%;
+  bottom: 10%;
   left: 5%;
   overflow: hidden;
   z-index: 4;
@@ -780,8 +780,8 @@ background-color: white;
                 align-items: center;
                 position: fixed;
                 z-index: 30;
-                
-                }
+              }
+              
 
 }
 

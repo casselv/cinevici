@@ -4,7 +4,7 @@ $(document).ready(function () {
   $container.slick({
     infinite: true,
     arrows: false,
-    swipe: false,
+    swipe: true,
     draggable: true,
     slidesToShow: 3,
     slidesToScroll: 1,
