@@ -4,7 +4,6 @@ const nodemailer = require("nodemailer");
 const path = require("path");
 
 const app = express();
-const port = 8917;
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
@@ -50,6 +49,8 @@ app.post("/submit-form", (req, res) => {
   });
 });
 
-app.listen(port, () => {
+const port = process.env.PORT || 3001;
+
+app.listen(port, "0.0.0.0", function () {
   console.log(`Server is listening on port ${port}`);
 });
