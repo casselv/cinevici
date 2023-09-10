@@ -1,6 +1,8 @@
 $(document).ready(function () {
   const $container = $(".imagecontainer");
 
+  const isMobile = window.innerWidth <= 768; // Adjust the breakpoint as needed
+
   $container.slick({
     infinite: true,
     arrows: false,
@@ -10,6 +12,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     focusOnSelect: true,
     centerMode: true,
+    vertical: isMobile,
   });
 
   $container.on("wheel", function (event) {
@@ -17,8 +20,8 @@ $(document).ready(function () {
 
     let delta;
 
-    if (event.originalEvent.deltaX !== undefined) {
-      delta = event.originalEvent.deltaX;
+    if (event.originalEvent.deltaY !== undefined) {
+      delta = event.originalEvent.deltaY;
     } else if (event.originalEvent.wheelDelta !== undefined) {
       delta = -event.originalEvent.wheelDelta;
     } else if (event.originalEvent.detail !== undefined) {

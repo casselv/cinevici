@@ -703,10 +703,9 @@ background-color: white;
   .imagecontainer img{
     margin-right: 0px;
     transition: 0.5s ease;
-    height: 300px;
-    width: 400px;
+    min-height: 100px;
+    min-width: 100px;
     object-fit: contain;
-    z-index: 30000;
     }
     .slidecontainer{
       margin-bottom: 0px;
@@ -841,6 +840,30 @@ background-color: white;
                   justify-content: center;
                   }
               
+                  .showroom{
+                    max-width: 100vw;
+                    height: 80vh;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 100px;
+                    background-color: white;
+                    }
+
+                    .imagecontainer img:not(.image.slick-slide.slick-current.slick-active) {
+                      filter: blur(8px);
+                      transition: 0.5s ease;
+                    scale: 0.6;
+                    }
+                    
+                    .image.slick-slide.slick-current.slick-active img {
+                      filter: none;
+                    
+                 
+                      scale: 1;
+                      transition: 0.5s ease;
+                    }
 
 }
 
