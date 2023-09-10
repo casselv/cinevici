@@ -150,7 +150,7 @@ align-items: center;
 height: 95vh;
 margin-top: 5vh;
 width: 100vw;
-background-color: rgb(181, 181, 181);
+background-color: rgb(255, 255, 255);
 display: flex;
 justify-content: center;
 align-items: center;
@@ -159,7 +159,7 @@ align-items: center;
 .product-cont{
 min-height: 60%;
 width: 100%;
-background-color: rgba(255, 0, 0, 0);
+background-color: white;
 margin: 20px;
 display: flex;
 flex-direction: column;
@@ -169,8 +169,8 @@ align-items: start;
 
 .otitle{
 align-self: flex-start;
-color: black!important;
-border: solid 1px black!important;
+color: rgb(255, 255, 255)!important;
+border: solid 1px rgb(255, 255, 255)!important;
 }
 
 .otitle .sircle{
@@ -180,7 +180,7 @@ border: solid 1px black!important;
   border-radius: 50%;
 }
 
-.ptitle, .stitle, .otitle{
+.stitle, .otitle{
 color: white;
 font-family: Helvetica, sans-serif;
 display: flex;
@@ -193,6 +193,19 @@ align-items: center;
 margin-bottom: 80px;
 }
 
+.ptitle{
+  color: rgb(0, 0, 0);
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px rgba(0, 0, 0, 0.533);
+  width: 30%;
+  padding: 0px 20px 0px 20px;
+  border-radius: 5px;
+  align-items: center;
+  margin-bottom: 80px;
+  }
+
 .ptitle h2, .stitle h2, .otitle h2{
 font-weight: lighter;
 font-size: 60px;
@@ -203,6 +216,10 @@ margin-bottom: 6px;
 .num{
 font-size: 20px;
 color: grey;
+}
+
+.ptitle .circle{
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .circle{
@@ -223,7 +240,7 @@ align-items: center;
 flex-direction: column;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 padding: 40px;
-border-radius: 2px;
+border-radius: 5px;
 cursor: pointer;
 border: rgb(0, 0, 0) solid 1px;
 text-decoration: none;
@@ -279,7 +296,7 @@ align-items: center;
 flex-direction: column;
 align-items: center;
 max-width: 100vw;
-background-color: rgb(246, 246, 246);
+background-color:  #0C0C0C;
 }
 
 .order-container{
@@ -345,7 +362,7 @@ height: 90%;
 padding: 10px;
 margin-top: 50px;
 max-width: 100%;
-border: solid 1.1px black;
+border: solid 1.1px rgb(255, 255, 255);
 border-radius: 5px;
 color: white;
 font-family: Arial, Helvetica, sans-serif;
@@ -397,9 +414,9 @@ padding-bottom: 30px;
 input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
-    background-color: rgb(246, 246, 246);
+    background-color: rgba(210, 208, 208, 0);
     border-radius: 5px;
-    border: solid 0.5px rgb(0, 0, 0);
+    border: solid 0.5px rgb(255, 255, 255);
     height: 30px;
     padding-left: 5px;
     padding-right: 5px;
@@ -409,7 +426,7 @@ input[type="range"] {
   input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    background-color: #000000; 
+    background-color: #ffffff; 
     width: 20px;
     
     height: 20px; 
@@ -418,7 +435,7 @@ input[type="range"] {
   }
 
 label{
-color: black;
+color: rgb(255, 255, 255);
 font-family: arial;
 }
 
@@ -471,14 +488,14 @@ width: 30%;
   left: -4px;
   height: 40px;
   width: 40px;
-  background-color: rgb(246, 246, 246);
-  border: solid 1px black;
+  background-color: none;
+  border: solid 1px white;
   border-radius: 50%;
   pointer-events: none;
 }
 
 .checkbox-input:checked ~ .checkmark {
-  background-color: black /* Change color when checked */
+  background-color: rgb(255, 255, 255) /* Change color when checked */
 }
 
 .dope{
@@ -627,33 +644,33 @@ background-color: white;
           }
 
           .product-cont{
-            min-height: 60%;
+            min-height: 70%;
             width: 100%;
             background-color: rgba(255, 0, 0, 0);
             margin: 20px;
             display: flex;
             gap: 10px;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-around;
             align-items: start;
             }
 
             #products{
-              height: 100%;
+              height: 95vh;
               width: 100vw;
-              background-color: rgb(181, 181, 181);
+              background-color: rgb(255, 255, 255);
               display: flex;
-              justify-content: center;
+              justify-content: flex-start;
               align-items: center;
               margin-top: 0px;
               }
 
               .singleproduct{
-                max-width: 90%;
-                min-width: 90%;
+                max-width: 50%;
+                min-width: 50%;
                 height: 100%;
                 font-size: 10px;
-                background-color: rgb(2, 2, 2);
+                background-color: rgb(0, 0, 0);
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -661,6 +678,7 @@ background-color: white;
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 padding: 10px;
                 border-radius: 5px;
+                margin-bottom: 100px;
                 cursor: pointer;
                 border: rgb(0, 0, 0) solid 1px;
                 text-decoration: none;
@@ -708,7 +726,7 @@ background-color: white;
         align-items: center;
         }
 
-        .ptitle, .stitle, .otitle{
+         .stitle, .otitle{
           color: white;
           font-family: Helvetica, sans-serif;
           display: flex;
@@ -720,6 +738,19 @@ background-color: white;
           align-items: center;
           margin-bottom: 80px;
           }
+
+          .ptitle{
+            color: rgb(0, 0, 0);
+            font-family: Helvetica, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            border: solid 1px rgba(0, 0, 0, 0.319);
+            width: 50%;
+            padding: 10px 20px 10px 20px;
+            border-radius: 5px;
+            align-items: center;
+            margin-bottom: 80px;
+            }
 
           .circle{
             border: 1px solid white;
@@ -796,7 +827,6 @@ background-color: white;
                 padding-bottom: 30px;
                 padding-left: 30px;
                 padding-right: 30px;
-                background-color: rgb(246, 245, 245);
                 }
 
                 .order-container{
