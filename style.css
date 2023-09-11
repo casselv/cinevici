@@ -895,6 +895,7 @@ background-color: white;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    background-color: yellow;
     }
 
    
@@ -908,6 +909,7 @@ background-color: white;
         align-items: center;
         padding-bottom: 5vh;
         overflow: hidden;
+        background-color: orange;
         }
 
         #typing{
