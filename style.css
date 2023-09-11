@@ -158,7 +158,7 @@ align-items: center;
 }
 
 .product-cont{
-min-height: 60%;
+height: 60%;
 width: 100%;
 background-color: white;
 margin: 20px;
@@ -922,10 +922,6 @@ background-color: white;
 
         #typing{
         font-size: 100px;
-        }
-
-        #products{
-        z-index: -100;
         }
 
         #products{
