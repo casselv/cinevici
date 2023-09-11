@@ -80,7 +80,7 @@ overflow: hidden;
 
 .service-cont{
 display: flex;
-max-width: 100%;
+max-width: 100vw;
 min-height: 60%;
 padding: 20px;
 justify-content: space-between;
@@ -914,7 +914,6 @@ background-color: white;
 
     #services{
       width: 100vw;
-      height: 100%;
       padding-top: 5vh;
       display: flex;
       justify-content: center;
