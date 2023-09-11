@@ -913,11 +913,13 @@ background-color: white;
 
       #services{
         width: 100vw;
-        height: 150vh;
+        height: 100vh;
         padding-top: 5vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-bottom: 5vh;
+        overflow: hidden;
         }
 
         #typing{
