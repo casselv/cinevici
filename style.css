@@ -913,7 +913,7 @@ background-color: white;
 
       #services{
         width: 100vw;
-        height: 100%;
+        height: 150vh;
         padding-top: 5vh;
         display: flex;
         justify-content: center;
@@ -939,6 +939,17 @@ background-color: white;
           align-items: center;
           }
 
+
+          .ptitle h2, .stitle h2, .otitle h2{
+            font-weight: lighter;
+            font-size: 35px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            }
+
+            .sircle{
+            border: solid 1px white;
+            }
 
       
 
