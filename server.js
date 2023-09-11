@@ -49,7 +49,7 @@ app.post("/submit-form", (req, res) => {
   });
 });
 
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3010;
 
 app.listen(port, "0.0.0.0", function () {
   console.log(`Server is listening on port ${port}`);

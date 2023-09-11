@@ -896,6 +896,8 @@ background-color: white;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    background-color: pink;
+    border: solid 15px red;
     }
 
     .pancont{
