@@ -924,6 +924,10 @@ background-color: white;
         font-size: 100px;
         }
 
+        #products{
+        z-index: -100;
+        }
+
 
       
 
