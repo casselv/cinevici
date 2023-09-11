@@ -912,6 +912,15 @@ background-color: white;
     font-size:100px;
     }
 
+    #services{
+      width: 100vw;
+      height: 100%;
+      padding-top: 5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+
 
       
 
