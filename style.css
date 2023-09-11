@@ -928,6 +928,17 @@ background-color: white;
         z-index: -100;
         }
 
+        #products{
+          height: 50vh;
+          padding-top: 5vh;
+          margin-top: 5vh;
+          width: 100vw;
+          background-color: rgb(255, 255, 255);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          }
+
 
       
 
