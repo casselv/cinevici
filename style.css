@@ -158,7 +158,7 @@ align-items: center;
 }
 
 .product-cont{
-height: 60%;
+min-height: 60%;
 width: 100%;
 background-color: white;
 margin: 20px;
@@ -955,7 +955,7 @@ background-color: white;
               padding-right: 20px;
               display: flex;
               max-width: 100%;
-              height: 50%;
+              height: 100%;
               align-items: center;
               flex-direction: column;
               justify-content: space-between;
