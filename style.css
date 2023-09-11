@@ -727,7 +727,7 @@ background-color: white;
         align-items: center;
         }
 
-         .stitle, .otitle{
+         .stitle{
           color: white;
           font-family: Helvetica, sans-serif;
           display: flex;
@@ -739,6 +739,19 @@ background-color: white;
           align-items: center;
           margin-bottom: 80px;
           }
+
+          .otitle{
+            color: white;
+            font-family: Helvetica, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            border: solid 1px rgba(255, 255, 255, 0.319);
+            width: 50%;
+            padding: 10px 20px 10px 20px;
+            border-radius: 5px;
+            align-items: center;
+            margin-bottom: 20px;
+            }
 
           .ptitle{
             color: rgb(0, 0, 0);
@@ -816,10 +829,10 @@ background-color: white;
               }
 
               .order{
-                max-height: 80vh;
+                max-height: 85vh;
                 border-radius: 2px;
                 display: flex;
-                margin-top: 5vh;
+                margin-top: 0vh;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
@@ -833,7 +846,7 @@ background-color: white;
 
                 .order-container{
                   width: 95%;
-                  height: 100%;
+                  height: 90%;
                   flex-direction: column;
                   display: flex;
                   align-items: center;

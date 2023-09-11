@@ -29,14 +29,14 @@ $(document).ready(function () {
     initializeCarousel();
   });
 
+  let scrollDelta = 0;
+
   $(".imagecontainer").on("wheel", function (event) {
     event.preventDefault();
 
-    let delta;
+    let vert;
 
     const breakpoint = 768;
-
-    let vert;
 
     if (window.innerWidth <= breakpoint) {
       vert = "deltaY";
@@ -45,21 +45,18 @@ $(document).ready(function () {
     }
 
     if (event.originalEvent[vert] !== undefined) {
-      delta = event.originalEvent[vert];
-    } else if (event.originalEvent.wheelDelta !== undefined) {
-      delta = -event.originalEvent.wheelDelta;
-    } else if (event.originalEvent.detail !== undefined) {
-      delta = -event.originalEvent.detail;
-    } else {
-      delta = 0;
-    }
+      scrollDelta += event.originalEvent[vert];
 
-    const slidesToScroll = 1;
+      // Set a threshold for scrollDelta to control when to move the slide
+      const threshold = 100;
 
-    if (delta > 0) {
-      $(".imagecontainer").slick("slickNext", slidesToScroll);
-    } else {
-      $(".imagecontainer").slick("slickPrev", slidesToScroll);
+      if (scrollDelta >= threshold) {
+        $(".imagecontainer").slick("slickNext"); // Move to the next slide
+        scrollDelta = 0;
+      } else if (scrollDelta <= -threshold) {
+        $(".imagecontainer").slick("slickPrev"); // Move to the previous slide
+        scrollDelta = 0;
+      }
     }
   });
 });
