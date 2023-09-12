@@ -19,9 +19,28 @@ app.post(
   "/submit-form",
   [
     check("textbox").trim().isString().escape(),
-    check("option").isArray(),
     check("budget").isNumeric(),
     check("email").isEmail(),
+    check("option").custom((value, { req }) => {
+      // Check if the "option" field is a single choice (string) or an array
+      if (typeof value === "string") {
+        // Handle single choice validation here
+        if (value.length === 0) {
+          throw new Error("Option field is required.");
+        }
+        // Add any additional validation for single choice here
+      } else if (Array.isArray(value)) {
+        // Handle multiple choice validation here
+        if (value.length === 0) {
+          throw new Error("At least one option is required.");
+        }
+        // Add any additional validation for multiple choices here
+      } else {
+        throw new Error("Invalid option format.");
+      }
+
+      return true; // Validation passed
+    }),
   ],
   (req, res) => {
     const errors = validationResult(req);
@@ -65,7 +84,7 @@ app.post(
   }
 );
 
-const port = process.env.PORT || 3015;
+const port = process.env.PORT || 3017;
 
 app.listen(port, "0.0.0.0", function () {
   console.log(`Server is listening on port ${port}`);
