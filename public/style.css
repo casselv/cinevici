@@ -709,7 +709,7 @@ background-color: white;
     margin-right: 0px;
     transition: 0.5s ease;
     min-height: 100px;
-    min-width: 100px;
+    max-width: 80%;
     object-fit: contain;
     }
     .slidecontainer{
@@ -722,7 +722,12 @@ background-color: white;
       .imagecontainer{
       width: 120%;
       overflow: visible;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 60px;
       }
+
 
       .slidecontainer{
         width: 100%;
@@ -860,7 +865,7 @@ background-color: white;
               
                   .showroom{
                     max-width: 100vw;
-                    height: 80vh;
+                    height: 85vh;
                     overflow: hidden;
                     display: flex;
                     align-items: center;
