@@ -600,6 +600,7 @@ background-color: white;
     font-size: 100px;
     color: white;
     z-index: 5;
+    margin-bottom: 160px;
     }
   .landing{
   width: 100vw;
@@ -697,7 +698,7 @@ background-color: white;
   position: absolute;
   color: rgba(255, 255, 255, 0.617);
   font-family: 'Courier New', Courier, monospace;
-  width: 70%;
+  width: 90%;
   bottom: 8%;
   left: 5%;
   overflow: hidden;
@@ -876,7 +877,7 @@ background-color: white;
                     
                     .image.slick-slide.slick-current.slick-active img {
                       filter: none;
-                      scale: 1;
+                      scale: 0.6;
                       transition: 0.5s ease;
                     }
 
