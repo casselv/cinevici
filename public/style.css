@@ -996,16 +996,18 @@ background-color: white;
                     width: 100%;
                 }
            
+              }
 
-
-            
-               
-              
-      
-
-      
-
-  }
+              @media (min-width: 500px) and (max-width: 768px) {
+                .imagecontainer{
+                  width: 120%;
+                  overflow: visible;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin-left: 100px;
+                  }
+              }
 
 
 
