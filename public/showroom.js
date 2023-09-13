@@ -10,14 +10,14 @@ function initializeCarousel() {
   $container.slick({
     infinite: true,
     arrows: false,
-    swipe: true,
-    draggable: true,
+    swipe: false,
+    draggable: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     focusOnSelect: true,
     centerMode: true,
     vertical: window.innerWidth <= breakpoint,
-    swipeToSlide: true,
+    swipeToSlide: false,
   });
 }
 
