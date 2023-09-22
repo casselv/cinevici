@@ -1,4 +1,3 @@
-require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
@@ -53,8 +52,8 @@ app.post(
     const transporter = nodemailer.createTransport({
       service: "Gmail",
       auth: {
-        user: process.env.EMAIL_USER, // Replace with your email
-        pass: process.env.EMAIL_PASSWORD, // Replace with your email password or app-specific password
+        user: process.env.EMAIL, // Replace with your email
+        pass: process.env.PASSWORD, // Replace with your email password or app-specific password
       },
     });
 
