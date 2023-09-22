@@ -181,7 +181,7 @@ border: solid 1px rgb(255, 255, 255)!important;
 }
 
 .otitle .sircle{
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -458,7 +458,7 @@ font-size: 15px;
 text-align: center;
 }
 
-.webcheck, .uxcheck, .signcheck, .visualcheck{
+.webcheck, .uxcheck{
 display: flex;
 padding: 10px;
 width: fit-content;
@@ -466,6 +466,18 @@ gap: 60px;
 border-radius: 5px;
 position: relative;
 }
+
+.signcheck, .visualcheck{
+  display: flex;
+  padding: 10px;
+  opacity: 30%;
+  width: fit-content;
+  gap: 60px;
+  border-radius: 5px;
+  position: relative;
+  pointer-events: none;
+  }
+  
 
 #insane{
 color: rgba(171, 171, 171, 0.731);
@@ -542,7 +554,7 @@ margin-left: 10px;
 .tags{
 width: 100%;
 display: flex;
-gap: 0px;
+gap: 5px;
 align-items: center;
 justify-content: space-between;
 }
@@ -553,7 +565,11 @@ justify-content: space-between;
 padding: 10px;
 border-radius: 5px;
 font-size: 10px;
-
+min-height: 80%;
+max-height: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .imagecontainer img{
@@ -958,7 +974,7 @@ background-color: white;
             margin-bottom: 0px;
             }
 
-            .sircle{
+            .tag{
             border: solid 1px white;
             }
 
