@@ -239,11 +239,13 @@ border-radius: 50%;
 
 .singleproduct{
 width: 40%;
-height: 60%;
+max-height: 60%;
+min-height: 60%;
+box-sizing: border-box;
 background-color: rgb(2, 2, 2);
 display: flex;
 justify-content: space-between;
-align-items: center;
+align-items: flex-start;
 flex-direction: column;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 padding: 40px;
@@ -253,6 +255,11 @@ border: rgb(0, 0, 0) solid 4px;
 text-decoration: none;
 list-style: none;
 transition: 0.2s ease;
+}
+
+.AnatoLink{
+color: white;
+font-weight: lighter;
 }
 
 .split{
@@ -272,6 +279,7 @@ color: rgba(255, 255, 255, 0.513);
 height: 50%;
 width: 50%;
 align-self: flex-start;
+object-fit: scale-down;
 }
 
 
@@ -360,9 +368,22 @@ flex-direction: column;
 height: 100%;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: flex-start;
 padding-bottom: 30px;
 padding-top: 30px;
+gap: 40px;
+}
+
+.actualproduct{
+display: flex;
+gap: 20px;
+}
+
+.Property-Link{
+color: grey;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 40px;
+justify-self: flex-start;
 }
 
 #budget{

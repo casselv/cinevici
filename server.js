@@ -16,6 +16,18 @@ app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, "public")));
 
+app.get("/geosurf", (req, res) => {
+  res.render("geosurf");
+});
+
+app.get("/propertylink", (req, res) => {
+  res.render("propertylink");
+});
+
+app.get("/anantolink", (req, res) => {
+  res.render("anatolink");
+});
+
 app.post(
   "/submit-form",
   [
@@ -85,7 +97,7 @@ app.post(
   }
 );
 
-const port = process.env.PORT || 3021;
+const port = process.env.PORT || 3023;
 
 app.listen(port, "0.0.0.0", function () {
   console.log(`Server is listening on port ${port}`);

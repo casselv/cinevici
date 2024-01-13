@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Surf Spots Map</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+<div class="logo">GeoSurf</div>
+<button class="forecast"><a href="./mastermind.html">Mastermind</a></button>
+</nav>
+
+
+<div class="selector">
+  
+<div class="wave-container">
+<label for="wave">Wave Type</label>
+<select id="wave">
+  <option value="any">any</option>
+  <option value="Beach Break">Beach Break</option>
+  <option value="Reef Break">Reef Break</option>
+  <option value="Point Break">Point Break</option>
+</select>
+</div>
+
+<div class="wind-container">
+<label for="wind">Wind</label>
+<select id="wind">
+  <option value="any">any</option>
+  <option value="N&NE">N - NE</option>
+  <option value="N&NW">N - NW</option>
+  <option value="S&SW">S - SW</option>
+  <option value="S&SE">S - SE</option>
+  <option value="W&NW">W - NW</option>
+  <option value="W&SW">W - SW</option>
+  <option value="E&NE">E - NE</option>
+  <option value="E&SE">E - SE</option>
+</select>
+</div>
+
+<div class="tide-container">
+<label for="tide">Tide</label>
+<select id="tide">
+  <option value="any">any</option>
+  <option value="lm">low - mid</option>
+  <option value="mh">mid - high</option>
+  <option value="lmh">low - mid - high</option>
+</select>
+</div>
+
+<div class="swell-container">
+  <label for="swell">Swell</label>
+  <select id="swell">
+    <option value="any">any</option>
+    <option value="N&NE">N - NE</option>
+    <option value="N&NW">N - NW</option>
+    <option value="S&SW">S - SW</option>
+    <option value="S&SE">S - SE</option>
+    <option value="W&NW">W - NW</option>
+    <option value="W&SW">W - SW</option>
+    <option value="E&NE">E - NE</option>
+    <option value="E&SE">E - SE</option>
+  </select>
+  </div>
+
+  <div class="bottom-container">
+    <label for="bottom">Bottom</label>
+    <select id="bottom">
+      <option value="any">any</option>
+      <option value="sand">sand only</option>
+      <option value="rock">rock only</option>
+      <option value="sandandrock">sand and rock</option>
+    </select>
+    </div>
+
+    <div class="wavedirection-container">
+      <label for="wavedirection">Wave Direction</label>
+      <select id="wavedirection">
+        <option value="any">any</option>
+        <option value="right">right only</option>
+        <option value="left">left only</option>
+        <option value="rightandleft">right & left</option>
+      </select>
+      </div>
+
+      <div class="swellexposure-container">
+        <label for="swellexposure">Swell Exposure</label>
+        <select id="swellexposure">
+          <option value="any">any</option>
+          <option value="minimal">minimal</option>
+          <option value="moderate">moderate</option>
+          <option value="high">high</option>
+        </select>
+        </div>
+
+
+</div>
+
+
+
+<div id="map-container"><div id="map"></div></div>
+
+<footer>
+  <div class="info">In this updated version, a LatLngBounds object is created to define the southwest and northeast corners of the desired restricted area. The setOptions method is used to set the restriction property of the Map object to the defined LatLngBounds. Adjust the coordinates in the LatLng objects as needed to define the desired restricted area.
+
+    With the map restriction in place, users will be limited to viewing and interacting with the map within the specified area, preventing excessive zooming out and scrolling across beyond the defined bounds.</div>
+    <div class="logo">GeoSurf</div>
+</footer>
+
+    
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-9GeQukRdy62c2w0qIubNRj3inCULBB8&callback=initMap" async defer></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+body{
+margin: 0px;
+padding:0px;
+background-color: #0C0C0C;
+}
+
+
+nav {
+    width: 100%;
+    min-height: 60px;
+    background-color: black;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 30;
+    }
+
+    .navlist{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        color: rgba(255, 255, 255, 0.656);
+        width: 100%;
+        height: 100%;
+        
+        font-family: arial;
+        text-decoration: none;
+        align-items: center;
+        list-style: none;
+        text-align: center;
+        }
+
+        .about, .product, .orders, .service{
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            list-style: none;
+            color: white;
+            transition: 0.2s ease;
+            }
+
+            .navlist a:hover{
+                background-color: rgba(255, 255, 255, 0.884);
+                color: rgba(0, 0, 0, 0.815);
+                }
+
+        .mainContainer{
+        display: flex;
+        padding-top: 5vh;
+        height: 95vh;
+        width: 100%;
+        }
+        .infomation{
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 30px;
+        }
+
+        h3{
+        font-weight: 100;
+        font-size: 15px;
+        }
+
+        p{
+        width: 70ch;
+        color: grey;
+        }
+
+        .techcard{
+        background-color: rgb(233, 233, 233);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: rgb(52, 52, 52);
+        border-radius: 1px;
+        }
+
+        .images{
+            height: 97.5%;
+            width: 100%;
+            margin-top: 2vh;
+            border-left: 0.5px solid rgba(255, 255, 255, 0.265);
+            display: flex;
+            flex-direction: column;
+            overflow: scroll;
+            gap: 40px;
+            box-sizing: border-box;
+            justify-content: space-between;
+            padding: 10px;
+            }
+
+            .imagecontainer{
+            width: 100%;
+            height: auto;
+            }
+
+            .imagecontainer img{
+                width: 100%;
+                object-fit: scale-down;
+                height: 100%;
+                }
+
+            .head{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            }
+
+            .whatisit{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            }
+
+            .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            }
+
+            .techcards{
+            display: flex;
+            gap: 20px;
+            }
+
+            .head h1{
+            color: blueviolet;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            }
+
+            .head p{
+                color: rgba(137, 43, 226, 0.526);
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+                font-size: 20px;
+                }
+
+                .mainContainer{
+                font-family: Helvetica, sans-serif;
+                color: white;
+                }
+
+            .skills{
+            color: white;
+            }
+
+            .anatolink{
+            color: white !important;
+            font-weight: lighter !important;
+            }
+
+            .anatolinked{
+                color: rgba(255, 255, 255, 0.618) !important;
+                font-weight: lighter !important;
+                }
+
+                .propertylink{
+                    color: rgb(116, 116, 116) !important;
+                    font-weight: bold !important;
+                    }
+        
+                    .propertylinked{
+                        color: rgba(255, 255, 255, 0.618) !important;
+                        font-weight: lighter !important;
+                        }
+
+            .techstack{
+            color: white;
+            }
+
+            @media screen and (max-width: 1300px) {
+                .mainContainer{
+                    display: flex;
+                    padding-top: 5vh;
+                    height: 100%;
+                    width: 100%;
+                    flex-direction: column;
+                    }
+            }
+            
