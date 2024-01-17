@@ -192,5 +192,21 @@ nav {
                     width: 100%;
                     flex-direction: column;
                     }
+
+                    p{
+                        width: 56ch;
+                        color: grey;
+                        }
+                
+            }
+
+            @media screen and (max-width: 500px) {
+            
+
+                    p{
+                        width: 50ch;
+                        color: grey;
+                        }
+                
             }
             
