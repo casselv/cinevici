@@ -52,7 +52,8 @@ position: relative;
 .landing p{
 position: absolute;
 color: rgba(255, 255, 255, 0.617);
-font-family: 'Courier New', Courier, monospace;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 25px;
 width: 50%;
 bottom: 5%;
 left: 5%;
@@ -86,11 +87,11 @@ overflow: hidden;
 
 .service-cont{
 display: flex;
-max-width: 100vw;
+width: 100%;
 min-height: 60%;
 padding: 20px;
-justify-content: space-between;
-align-items: center;
+justify-content: space-around;
+align-items: flex-start;
 flex-direction: column;
 }
 
@@ -114,12 +115,22 @@ color: rgba(255, 255, 255, 0.52);
 text-align: center;
 }
 
+.servicetext{
+color: rgb(175, 175, 175);
+font-family: Arial, Helvetica, sans-serif;
+width: 80ch;
+}
+
+.uigang{
+font-weight: bold;
+color: white;
+}
+
 .stitle{
 color: white;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 border: solid 1px rgb(197, 197, 197);
 padding: 20px;
-width: 20%;
 border-radius: 15px;
 margin-bottom: 70px;
 align-self: flex-start;
@@ -152,7 +163,6 @@ align-items: center;
 }
 
 #products{
-height: 95vh;
 padding-top: 5vh;
 margin-top: 5vh;
 min-height: 700px;
@@ -191,9 +201,10 @@ border: solid 1px rgb(255, 255, 255)!important;
 color: white;
 font-family: Helvetica, sans-serif;
 display: flex;
+box-sizing: border-box;
 justify-content: space-between;
 border: solid 1px rgba(255, 255, 255, 0.319);
-width: 30%;
+width: 40%;
 padding: 0px 20px 0px 20px;
 border-radius: 5px;
 align-items: center;
@@ -238,7 +249,7 @@ border-radius: 50%;
 
 
 .singleproduct{
-width: 40%;
+width: 60%;
 max-height: 60%;
 min-height: 60%;
 box-sizing: border-box;
@@ -249,9 +260,8 @@ align-items: flex-start;
 flex-direction: column;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 padding: 40px;
-border-radius: 5px;
+border-radius: 3px;
 cursor: pointer;
-border: rgb(0, 0, 0) solid 4px;
 text-decoration: none;
 list-style: none;
 transition: 0.2s ease;
@@ -331,7 +341,7 @@ border: 1px solid rgba(255, 255, 255, 0.478);
 }
 
 .singleproduct:hover {
-  border: 4px solid #7F26DE;
+  background-color: rgb(48, 48, 48);
   }
 
 .arrow{
@@ -376,7 +386,10 @@ gap: 40px;
 
 .actualproduct{
 display: flex;
+flex-wrap: wrap;
 gap: 20px;
+justify-content: flex-start;
+align-items: center;
 }
 
 .Property-Link{
@@ -635,15 +648,32 @@ min-height: 500px;
 overflow: hidden;
 display: flex;
 align-items: center;
+position: relative;
 justify-content: center;
 margin-top: 100px;
 background-color: white;
+}
+
+.conceptual{
+position: absolute;
+top: 20px;
+right: 20px;
+font-size: 15px;
+font-weight: 200;
+color: rgb(142, 142, 142);
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
 
 
 @media screen and (max-width: 768px) {
+
+  .servicetext{
+    color: rgb(175, 175, 175);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60ch;
+    }
 
   .landing h1{
     font-size: 100px;
@@ -713,7 +743,7 @@ background-color: white;
             }
 
             #products{
-              height: 95vh;
+    
               width: 100vw;
               min-height: 600px;
               background-color: rgb(255, 255, 255);
@@ -748,7 +778,6 @@ background-color: white;
 .landing p{
   position: absolute;
   color: rgba(255, 255, 255, 0.617);
-  font-family: 'Courier New', Courier, monospace;
   width: 90%;
   bottom: 8%;
   left: 5%;
@@ -980,7 +1009,6 @@ background-color: white;
         }
 
         #products{
-          height: 95vh;
           padding-top: 5vh;
           width: 100vw;
           background-color: rgb(255, 255, 255);
@@ -1059,6 +1087,37 @@ background-color: white;
                   align-items: center;
                   margin-left: 100px;
                   }
+
+                  .servicetext{
+                    color: rgb(175, 175, 175);
+                    font-family: Arial, Helvetica, sans-serif;
+                    width: 50ch;
+                    }
+              }
+
+
+              @media  (max-width: 500px) {
+
+                .stitle, .otitle{
+                  color: white;
+                  font-family: Helvetica, sans-serif;
+                  display: flex;
+                  box-sizing: border-box;
+                  justify-content: space-between;
+                  border: solid 1px rgba(255, 255, 255, 0.319);
+                  width: 70%;
+                  padding: 0px 40px 0px 40px;
+                  border-radius: 5px;
+                  align-items: center;
+                  margin-bottom: 80px;
+                  }
+                
+
+                  .servicetext{
+                    color: rgb(175, 175, 175);
+                    font-family: Arial, Helvetica, sans-serif;
+                    width: 30ch;
+                    }
               }
 
 
