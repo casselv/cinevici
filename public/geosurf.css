@@ -201,10 +201,17 @@ nav {
             }
 
             @media screen and (max-width: 500px) {
+
+                .head{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    flex-wrap: wrap;
+                    }
             
 
                     p{
-                        width: 50ch;
+                        width: 35ch;
                         color: grey;
                         }
                 
