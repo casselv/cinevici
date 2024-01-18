@@ -32,7 +32,6 @@ app.post(
   "/submit-form",
   [
     check("textbox").trim().isString().escape(),
-    check("budget").isNumeric(),
     check("email").isEmail(),
     check("option").custom((value, { req }) => {
       // Check if the "option" field is a single choice (string) or an array
@@ -61,7 +60,7 @@ app.post(
       // Handle validation errors, e.g., return an error response
       return res.status(422).json({ errors: errors.array() });
     }
-    const { textbox, option, budget, email } = req.body;
+    const { textbox, option, email } = req.body;
 
     const transporter = nodemailer.createTransport({
       service: "Gmail",
@@ -82,7 +81,7 @@ app.post(
       from: "geosurfaus@gmail.com",
       to: "geosurfaus@gmail.com",
       subject: "New Form Submission",
-      text: `Comment: ${textbox}\nOptions: ${optionsText}\nBudget: ${budget}\nEmail: ${email}`,
+      text: `Comment: ${textbox}\nOptions: ${optionsText}\nEmail: ${email}`,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
@@ -97,7 +96,7 @@ app.post(
   }
 );
 
-const port = process.env.PORT || 3023;
+const port = process.env.PORT || 3025;
 
 app.listen(port, "0.0.0.0", function () {
   console.log(`Server is listening on port ${port}`);
