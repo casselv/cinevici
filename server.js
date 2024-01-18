@@ -78,11 +78,16 @@ app.post(
     }
 
     const mailOptions = {
-      from: "geosurfaus@gmail.com",
-      to: "geosurfaus@gmail.com",
+      from: "cinevici@gmail.com",
+      to: "cinevici@gmail.com",
       subject: "New Form Submission",
       text: `Comment: ${textbox}\nOptions: ${optionsText}\nEmail: ${email}`,
     };
+
+    /*
+    from: "geosurfaus@gmail.com",
+      to: "geosurfaus@gmail.com",
+    */
 
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
@@ -96,7 +101,7 @@ app.post(
   }
 );
 
-const port = process.env.PORT || 3025;
+const port = process.env.PORT || 3026;
 
 app.listen(port, "0.0.0.0", function () {
   console.log(`Server is listening on port ${port}`);
