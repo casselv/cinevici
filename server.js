@@ -78,8 +78,8 @@ app.post(
     }
 
     const mailOptions = {
-      from: "cinevici@gmail.com",
-      to: "cinevici@gmail.com",
+      from: "geosurfaus@gmail.com",
+      to: "geosurfaus@gmail.com",
       subject: "New Form Submission",
       text: `Comment: ${textbox}\nOptions: ${optionsText}\nEmail: ${email}`,
     };
