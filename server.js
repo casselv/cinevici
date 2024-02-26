@@ -23,10 +23,10 @@ app.get("/geosurf", (req, res) => {
 app.get("/propertylink", (req, res) => {
   res.render("propertylink");
 });
-
+/*
 app.get("/anantolink", (req, res) => {
   res.render("anatolink");
-});
+});*/
 
 app.post(
   "/submit-form",
