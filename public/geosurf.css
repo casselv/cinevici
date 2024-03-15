@@ -8,19 +8,20 @@ background-color: #0C0C0C;
 nav {
     width: 100%;
     min-height: 60px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     height: 5vh;
-    display: flex;
+    
     justify-content: space-between;
     align-items: center;
     position: fixed;
     z-index: 30;
+    display: none;
     }
 
     .navlist{
         margin: 0px;
         padding: 0px;
-        display: flex;
+        display: none;
         justify-content: space-between;
         color: rgba(255, 255, 255, 0.656);
         width: 100%;
@@ -37,7 +38,7 @@ nav {
             cursor: pointer;
             height: 100%;
             width: 100%;
-            display: flex;
+            display: none;
             justify-content: center;
             align-items: center;
             text-decoration: none;
@@ -46,10 +47,7 @@ nav {
             transition: 0.2s ease;
             }
 
-            .navlist a:hover{
-                background-color: rgba(255, 255, 255, 0.884);
-                color: rgba(0, 0, 0, 0.815);
-                }
+            
 
         .mainContainer{
         display: flex;
