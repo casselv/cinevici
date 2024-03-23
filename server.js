@@ -23,10 +23,10 @@ app.get("/geosurf", (req, res) => {
 app.get("/propertylink", (req, res) => {
   res.render("propertylink");
 });
-/*
+
 app.get("/anantolink", (req, res) => {
   res.render("anatolink");
-});*/
+});
 
 app.post(
   "/submit-form",
@@ -101,7 +101,7 @@ app.post(
   }
 );
 
-const port = process.env.PORT || 3026;
+const port = process.env.PORT || 3027;
 
 app.listen(port, "0.0.0.0", function () {
   console.log(`Server is listening on port ${port}`);

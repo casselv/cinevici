@@ -15,13 +15,12 @@ nav {
     align-items: center;
     position: fixed;
     z-index: 30;
-    display: none;
     }
 
     .navlist{
         margin: 0px;
         padding: 0px;
-        display: none;
+        display: flex;
         justify-content: space-between;
         color: rgba(255, 255, 255, 0.656);
         width: 100%;
@@ -51,8 +50,8 @@ nav {
 
         .mainContainer{
         display: flex;
-        padding-top: 5vh;
-        height: 95vh;
+        padding-top: 0vh;
+        height: 100vh;
         width: 100%;
         }
         .infomation{
