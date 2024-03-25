@@ -197,7 +197,7 @@ align-items: center;
 #products{
 padding-top: 5vh;
 margin-top: 0vh;
-min-height: 700px;
+min-height: 100vh;
 width: 100vw;
 background-color: rgb(255, 255, 255);
 display: flex;
@@ -775,7 +775,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
             #products{
     
               width: 100vw;
-              min-height: 600px;
+              min-height: 100vh;
               background-color: rgb(255, 255, 255);
               display: flex;
               justify-content: flex-start;
@@ -942,6 +942,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
                 background-color: black;
                 height: 8vh;
                 display:flex;
+                display: none;
                 justify-content: space-between;
                 align-items: center;
                 position: fixed;
@@ -1041,6 +1042,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
         #products{
           padding-top: 5vh;
           width: 100vw;
+          min-height: 100vh;
           background-color: rgb(255, 255, 255);
           display: flex;
           justify-content: center;

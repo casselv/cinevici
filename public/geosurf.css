@@ -10,7 +10,7 @@ nav {
     min-height: 60px;
     background-color: rgba(0, 0, 0, 0);
     height: 5vh;
-    
+    display: none;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -25,7 +25,7 @@ nav {
         color: rgba(255, 255, 255, 0.656);
         width: 100%;
         height: 100%;
-        
+        display: none;
         font-family: arial;
         text-decoration: none;
         align-items: center;
